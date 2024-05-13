@@ -1,0 +1,13 @@
+# requirements.txt
+
+# Required libraries
+numpy==1.21.0
+pandas==1.3.3
+Pillow==8.4.0
+matplotlib==3.4.3
+folium==0.12.1
+selenium==4.0.0
+network_map>=1.0.0
+
+# Optional libraries (for visualization purposes)
+webbrowser
