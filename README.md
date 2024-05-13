@@ -41,3 +41,5 @@ Contributions to this repository are welcome. If you have suggestions for improv
 
 License
 This project is licensed under the MIT License.
+install packages
+pip install -r requirements.txt
