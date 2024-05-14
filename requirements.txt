@@ -11,3 +11,8 @@ network_map>=1.0.0
 
 # Optional libraries (for visualization purposes)
 webbrowser
+
+# Additional libraries
+scipy==1.7.1
+scikit-learn==0.24.2
+tensorflow==2.6.0
