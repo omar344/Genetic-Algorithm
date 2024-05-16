@@ -1,4 +1,4 @@
-from library import *
+from Libraries import * 
 
 def create_network_map(cities, cost_matrix, cities_coords):
     """Create a visual representation of the network"""

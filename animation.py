@@ -1,4 +1,4 @@
-from library import * 
+from Libraries import * 
 def animate_best_routes(best_routes_per_generation, cities, cost_matrix, cities_coords):
     """Create an animation to show the best route evolving with generations"""
     # Generate the frames
