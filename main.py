@@ -17,7 +17,7 @@ def genetic_algorithm():
     # Create visual representation of network (Optional)
     map = create_network_map(cities, cost_matrix, cities_coords)
     # Save the map to an HTML file
-    map.save('./network_map.html')
+    map.save('./assets/network_map.html')
 
     # Get GA configurations
     population_size, elitism_percentage, tournament_size, max_generations, max_stagnation = get_ga_config()

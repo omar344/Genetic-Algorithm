@@ -1,7 +1,4 @@
-import copy
-import random
-
-
+from library import *
 def crossover(parent1, parent2, origin, destination):
     """Create two new chromosomes by applying crossover to two parent chromosomes"""
     route1 = copy.deepcopy(parent1['route'])

@@ -1,17 +1,4 @@
-import numpy as np
-import pandas as pd
-import random
-import copy
-from PIL import Image  # for visualisation purposes (Optional)
-import matplotlib.pyplot as plt  # for visualisation purposes (Optional)
-import folium  # for visualisation purposes (Optional)
-from folium import IFrame  # for visualisation purposes (Optional)
-import os  # for visualisation purposes (Optional)
-from selenium import webdriver  # for visualisation purposes (Optional)
-from selenium.webdriver.chrome.service import Service  # for visualisation purposes (Optional)
-from selenium.webdriver.chrome.options import Options  # for visualisation purposes (Optional)
-import io  # for visualisation purposes (Optional)
-import time  # for visualisation purposes (Optional)
+from library import *
 
 def create_network_map(cities, cost_matrix, cities_coords):
     """Create a visual representation of the network"""

@@ -1,18 +1,4 @@
-import numpy as np
-import pandas as pd
-import random
-import copy
-from PIL import Image  # for visualisation purposes (Optional)
-import matplotlib.pyplot as plt  # for visualisation purposes (Optional)
-import folium  # for visualisation purposes (Optional)
-from folium import IFrame  # for visualisation purposes (Optional)
-import os  # for visualisation purposes (Optional)
-from selenium import webdriver  # for visualisation purposes (Optional)
-from selenium.webdriver.chrome.service import Service  # for visualisation purposes (Optional)
-from selenium.webdriver.chrome.options import Options  # for visualisation purposes (Optional)
-import io  # for visualisation purposes (Optional)
-import time  # for visualisation purposes (Optional)
-
+from library import *
 
 def get_data():
     """Get the data for the problem"""
@@ -60,12 +46,17 @@ def get_data():
                       'Vienna': 6, 'Porto': 2, 'Barcelona': 3, 'Toulouse': 4, 'Strasbourg': 5, 'Ghent': 5,
                       'Brussels': 4, 'Hamburg': 6, 'Frankfurt': 6, 'Milan': 6}
 
+    print (50*"*")
+    for i in enumerate(cities):
+        print("City: ", i[1], "Index: ", i[0])
+    print (50*"*")
     # Origin
-    origin = 'Porto'
+    origin = input("Enter the index of the origin city: ")
+    origin = cities[int(origin)]
 
     # Destination
-    destination = 'Zurich'
-
+    destination = input("Enter the index of the destination city: ")
+    destination = cities[int(destination)]
     # City coordinates - for visualisation purposes (Optional)
     cities_coords = {
         'Lisbon': {'latitude': 38.722, 'longitude': -9.139},

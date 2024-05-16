@@ -1,23 +1,4 @@
-from webbrowser import Chrome
-
-import numpy as np
-import pandas as pd
-import random
-import copy
-from PIL import Image  # for visualisation purposes (Optional)
-import matplotlib.pyplot as plt  # for visualisation purposes (Optional)
-import folium  # for visualisation purposes (Optional)
-from folium import IFrame  # for visualisation purposes (Optional)
-import os  # for visualisation purposes (Optional)
-from selenium import webdriver  # for visualisation purposes (Optional)
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-import io  # for visualisation purposes (Optional)
-import time  # for visualisation purposes (Optional)
-from network_map import create_network_map
-
-
+from library import * 
 def animate_best_routes(best_routes_per_generation, cities, cost_matrix, cities_coords):
     """Create an animation to show the best route evolving with generations"""
     # Generate the frames
@@ -55,17 +36,17 @@ def animate_best_routes(best_routes_per_generation, cities, cost_matrix, cities_
         folium.Marker(location=[avg_lat, avg_lon], icon=folium.DivIcon(html=legend_html)).add_to(map)
 
         # Save the map as an HTML file for this frame
-        html_path = f'frame_{frame}.html'  # Remove the leading "./" from the file path
+        html_path = f'./assets/frame_{frame}.html'  # Remove the leading "./assets" from the file path
         map.save(html_path)
         # Append image path to list
-        image_path = f'frame_{frame}.png'  # Remove the leading "./" from the file path
+        image_path = f'./assets/frame_{frame}.png'  # Remove the leading "./" from the file path
         images_paths = images_paths + [image_path]
 
         convert_html_to_image(html_path, image_path)
         # Optionally delete html file
         os.remove(html_path)
 
-    gif_path = f'_{best_routes_per_generation[0][0][0]}_{best_routes_per_generation[0][0][-1]}.gif'  # Remove the leading "./" from the file path
+    gif_path = f'./assets/{best_routes_per_generation[0][0][0]}_{best_routes_per_generation[0][0][-1]}.gif'  # Remove the leading "./" from the file path
     create_gif(images_paths, gif_path)
 
     # Optionally delete the image files after creating the GIF
