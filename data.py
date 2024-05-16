@@ -48,7 +48,7 @@ def get_data():
 
     print (50*"*")
     for i in enumerate(cities):
-        print("City: ", i[1], "Index: ", i[0])
+        print("City: ", i[1], "Index: ", i[0] + 1)
     print (50*"*")
     # Origin
     origin = input("Enter the index of the origin city: ")

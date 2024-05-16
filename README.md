@@ -54,10 +54,10 @@ echo "Setup completed. Virtual environment activated and dependencies installed.
 ```
 
 # Example
-![Shortest Path GIF](https://github.com/mo7amedgom3a/Genetic-Algorithm/blob/main/assets/_Porto_Zurich.gif?raw=true)
+![Shortest Path GIF](https://github.com/mo7amedgom3a/Genetic-Algorithm/blob/main/assets/Madrid_Brussels.gif?raw=true)
 
 
-To illustrate the Genetic Algorithm (GA) for finding the shortest path between Porto and Zurich:
+To illustrate the Genetic Algorithm (GA) for finding the shortest path between Madrid and Brussels:
 
 1. **Graph Representation**: Consider a simplified map where cities are nodes and connections between cities are edges with associated distances.
 
