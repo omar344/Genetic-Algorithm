@@ -1,7 +1,7 @@
 # Mutation Function
 import copy
 import random
-from crossover import repair_route
+from Phases.crossover import repair_route
 
 def mutation(chromosome, cities, origin, destination):
     """Create two new chromosomes by applying mutations to a chromosome"""
