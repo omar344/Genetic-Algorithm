@@ -52,11 +52,11 @@ def get_data():
     print (50*"*")
     # Origin
     origin = input("Enter the index of the origin city: ")
-    origin = cities[int(origin)]
+    origin = cities[int(origin) - 1]
 
     # Destination
     destination = input("Enter the index of the destination city: ")
-    destination = cities[int(destination)]
+    destination = cities[int(destination) - 1]
     # City coordinates - for visualisation purposes (Optional)
     cities_coords = {
         'Lisbon': {'latitude': 38.722, 'longitude': -9.139},
