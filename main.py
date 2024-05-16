@@ -1,12 +1,12 @@
 from animation import animate_best_routes
-from crossover import crossover
+from Phases.crossover import crossover
 from data import get_data
-from evaluate_population import evaluate_and_sort_population
-from genatic_config import get_ga_config
-from mutation import mutation
+from Phases.evaluate_population import evaluate_and_sort_population
+from Phases.genatic_config import get_ga_config
+from Phases.mutation import mutation
 from network_map import create_network_map
-from population import initialise_population
-from tournament_selection import tournament_selection
+from Phases.population import initialise_population
+from Phases.tournament_selection import tournament_selection
 
 
 def genetic_algorithm():

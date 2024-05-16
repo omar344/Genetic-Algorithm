@@ -54,7 +54,7 @@ echo "Setup completed. Virtual environment activated and dependencies installed.
 ```
 
 # Example
-![Shortest Path GIF](https://github.com/mo7amedgom3a/Genetic-Algorithm/blob/main/_Porto_Zurich.gif?raw=true)
+![Shortest Path GIF](https://github.com/mo7amedgom3a/Genetic-Algorithm/blob/main/assets/_Porto_Zurich.gif?raw=true)
 
 
 To illustrate the Genetic Algorithm (GA) for finding the shortest path between Porto and Zurich:
